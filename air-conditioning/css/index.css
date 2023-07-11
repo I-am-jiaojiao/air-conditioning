@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'lcd';
+  src: url('../fonts/lcd/FakeHope.ttf');
+}
+
+.container {
+  width: 100dvw;
+  height: 100dvh;
+  background: gray;
+  padding-top: 40px;
+  text-align: center;
+}
+
+h3 {
+  margin-bottom: 16px;
+}
+
+.container__div--airConditioning {
+  width: 560px;
+  height: 180px;
+  background: #ffffff;
+  border-radius: 12px;
+  margin: auto;
+}
+
+.header__div {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* 配置信息 */
+.container__div--airConditioning-img {
+  width: 100px;
+  height: 100px;
+  margin-top: 16px;
+}
+
+/* 当前模式 */
+.mode__div {
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  height: 100px;
+  padding: 16px;
+  opacity: 0;
+}
+
+.mode__div i {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.mode__div .icon-sun {
+  color: #ff6600;
+  display: none;
+}
+
+.mode__div .icon-snow {
+  color: #0051ff;
+}
+
+.num {
+  font-family: "lcd";
+  font-size: 40px;
+  color: #add8e6;
+}
+
+.display span:nth-child(2) {
+  font-family: "lcd";
+  font-size: 24px;
+  color: #333333;
+}
+
+/* logo */
+.logo__div {
+  text-align: center;
+}
+
+/* 指示灯 */
+.pilotLamp__div {
+  display: flex;
+  justify-content: flex-end;
+  height: 8px;
+  margin-bottom: -8px;
+}
+
+.pilotLamp__div--on {
+  width: 8px;
+  height: 8px;
+  background: rgb(255, 22, 22);
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+/* 分隔线 */
+.container__div--airConditioning-divider {
+  display: inline-block;
+  width: 100%;
+  height: 3px;
+  background: #333333;
+  margin-top: 0;
+}
+
+/* 风 */
+.container__div--wind {
+  width: 560px;
+  height: 180px;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  opacity: 0;
+}
+
+.container__div--wind span:nth-child(1) {
+  width: 20px;
+  height: 100px;
+  background: lightblue;
+  transform: rotate(30deg);
+  animation: span1 3s linear infinite;
+}
+
+.container__div--wind span:nth-child(2) {
+  width: 20px;
+  height: 100px;
+  background: lightblue;
+  animation: span2 3s linear infinite;
+}
+
+.container__div--wind span:nth-child(3) {
+  width: 20px;
+  height: 100px;
+  background: lightblue;
+  transform: rotate(-30deg);
+  animation: span3 3s linear infinite;
+}
+
+@keyframes span1 {
+  0% {
+    transform: rotate(30deg) scale(.8);
+  }
+
+  100% {
+    transform: rotate(30deg) scale(1.2);
+  }
+}
+
+@keyframes span2 {
+  0% {
+    transform: scale(.8);
+  }
+
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+@keyframes span3 {
+  0% {
+    transform: rotate(-30deg) scale(.8);
+  }
+
+  100% {
+    transform: rotate(-30deg) scale(1.2);
+  }
+}
+
+/* 控制器 */
+.container__div--controller {
+  width: 560px;
+  height: 180px;
+  background: #ffffff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+  margin-top: 80px;
+  border-radius: 12px;
+}
+
+.container__div--controller i {
+  font-size: 56px;
+}
+
+.container__div--controller div:nth-child(odd) {
+  display: flex;
+  flex-direction: column;
+}
+
+.container__div--mode .icon-sun {
+  color: #ff6600;
+}
+
+.container__div--mode .icon-snow {
+  color: #0051ff;
+}
+
+.container__div--switch {
+  color: #f08080;
+}
+
+.container__div--adjust {
+  color: #c2c2c2;
+}

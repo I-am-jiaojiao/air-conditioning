@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/static/favicon.ico">
+  <title>空调房，进来凉快会儿</title>
+  <link rel="stylesheet" href="//at.alicdn.com/t/c/font_3205612_mka6v6y6rre.css">
+  <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+  <div class="container">
+    <h3>免费空调房，小心别着凉~</h3>
+    <!-- 空调本体 -->
+    <div class="container__div--airConditioning">
+      <div class="header__div">
+        <!-- 配置信息 -->
+        <img class="container__div--airConditioning-img" src="./static/images/data.jpg" alt="">
+        <!-- 当前模式 -->
+        <div class="mode__div">
+          <i class="iconfont icon-sun hot"></i>
+          <i class="iconfont icon-snow cold"></i>
+          <!-- 温度显示 -->
+          <span class="display"> <span class="num">22</span> <span>℃</span> </span>
+        </div>
+      </div>
+      <!-- logo -->
+      <div class="logo__div">
+        <i class="iconfont icon-heart"></i>
+      </div>
+      <!-- 指示灯 -->
+      <div class="pilotLamp__div">
+        <span class="pilotLamp__div--on"></span>
+      </div>
+      <!-- 分隔线 -->
+      <span class="container__div--airConditioning-divider"></span>
+    </div>
+
+    <!-- 风 -->
+    <div class="container__div--wind">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <!-- 控制器 -->
+    <div class="container__div--controller">
+      <!-- 模式 -->
+      <div class="container__div--mode">
+        <span><i class="iconfont icon-sun handleHot"></i></span>
+        <span><i class="iconfont icon-snow handleCold"></i></span>
+        <audio id="checkMode" src="./static/audios/checkedMode.mp3"></audio>
+      </div>
+      <!-- 开/关 -->
+      <div class="container__div--switch">
+        <span><i class="iconfont icon-off"></i></span>
+        <audio id="clickSound" src="./static/audios/start.mp3"></audio>
+        <audio id="clickSound1" src="./static/audios/start1.mp3" loop></audio>
+      </div>
+      <!-- 调节 -->
+      <div class="container__div--adjust">
+        <span><i class="iconfont icon-sort-up"></i></span>
+        <span><i class="iconfont icon-sort-down-copy"></i></span>
+        <audio id="upOrDown" src="./static/audios/up-down.mp3"></audio>
+      </div>
+    </div>
+  </div>
+
+  <script src="./js/index.js"></script>
+</body>
+</html>
